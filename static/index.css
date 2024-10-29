@@ -1,0 +1,48 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(9, 91, 64);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(28, 1vw); /* 28 columns */
+    grid-template-rows: repeat(28, 1vw);    /* 28 rows */
+}
+
+.cell {
+    width: 1vw;
+    height: 1vw;
+    background-color:darkcyan;
+    cursor: pointer;
+}
+.active {
+    background-color: black; 
+}
+.btn{
+    width: 8vw;
+    height: 3vw;
+    border-radius: 1vw;
+    background-color: aqua;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+}
+.btn:hover{
+    background-color: rgb(6, 99, 99);
+    cursor: pointer;
+}
+.result{
+    color: azure;
+}
+.btn-container{
+    display: flex;
+}
