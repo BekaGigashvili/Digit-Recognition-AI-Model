@@ -20,7 +20,6 @@ def predict():
         if input_data.shape != (1, 28, 28, 1):
             return jsonify({'error': 'Invalid input shape'}), 400
 
-        print(data)
         prediction = model.predict(input_data).argmax()
         return jsonify({'prediction': int(prediction)})
     except KeyError:
